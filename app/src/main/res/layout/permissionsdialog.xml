@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="18.0sp"
+        android:textColor="#ff000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="@string/permission" />
+
+    <TextView
+        android:textSize="15.0sp"
+        android:textColor="#ff000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="15.0dip"
+        android:text="@string/permission_des" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/storage_pricon" />
+
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="#ff000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/storage" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/storage_pricon" />
+
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="#ff000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="Camera" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/storage_pricon" />
+
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="#ff000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="Audio" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="#ff000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="15.0dip"
+        android:text="@string/permission_des1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="15.0dip">
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ff009183"
+            android:id="@+id/ok"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ff009183"
+            android:id="@+id/settings"
+            android:background="#00000000"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="@string/settings"
+            android:layout_toLeftOf="@+id/ok" />
+    </RelativeLayout>
+</LinearLayout>

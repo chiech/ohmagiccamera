@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout">
+
+        <RelativeLayout
+            android:id="@+id/header_rel"
+            android:background="@color/colorHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:textSize="20.0sp"
+                android:typeface="serif"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/exit_title" />
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="20.0sp"
+            android:typeface="serif"
+            android:textColor="@color/colorHeader"
+            android:gravity="center"
+            android:id="@+id/msg"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:text="@string/exit_warning"
+            android:layout_below="@+id/header_rel" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msg">
+
+            <Button
+                android:textSize="20.0sp"
+                android:typeface="serif"
+                android:textColor="@color/color_white"
+                android:background="@color/colorHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="@string/exit1"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:textSize="20.0sp"
+                android:typeface="serif"
+                android:textColor="@color/color_white"
+                android:background="@color/colorHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="@string/rate_now"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

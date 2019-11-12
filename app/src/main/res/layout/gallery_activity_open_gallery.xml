@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_weight="0.90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/album_btn_cancel"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.14"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/headertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:maxLength="15"
+                    android:text="All Photos"
+                    android:textColor="#454545"
+                    android:textSize="16.0sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/btn_switch"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary1"
+        android:layout_below="@id/selector_parent"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+    <RelativeLayout
+        android:layout_weight="0.10"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <include layout="@layout/gallery_content_open_gallery" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorEditorBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/colorEditorHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editor_overlays"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/btn_bck"
+                android:background="@drawable/editor_back"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/done"
+                android:background="@drawable/editor_done3"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorEditorSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/header" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/header">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@color/colorEditorWhite"
+                android:id="@+id/compare"
+                android:background="@drawable/editor_compare_button"
+                android:layout_width="70.0dip"
+                android:layout_height="25.0dip"
+                android:layout_margin="10.0dip"
+                android:text="@string/editor_compare"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seek"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_above="@+id/footer" />
+
+        <View
+            android:background="@color/colorEditorSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_above="@+id/footer" />
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:background="@color/colorEditorFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_alignParentBottom="true">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/o1"
+                        android:background="@drawable/editor_os1"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o2"
+                        android:background="@drawable/editor_os2"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o3"
+                        android:background="@drawable/editor_os3"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o4"
+                        android:background="@drawable/editor_os4"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o5"
+                        android:background="@drawable/editor_os5"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o6"
+                        android:background="@drawable/editor_os6"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o7"
+                        android:background="@drawable/editor_os7"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o8"
+                        android:background="@drawable/editor_os8"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o9"
+                        android:background="@drawable/editor_os9"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o10"
+                        android:background="@drawable/editor_os10"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o11"
+                        android:background="@drawable/editor_os11"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o12"
+                        android:background="@drawable/editor_os12"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o13"
+                        android:background="@drawable/editor_os13"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o14"
+                        android:background="@drawable/editor_os14"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o15"
+                        android:background="@drawable/editor_os15"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o16"
+                        android:background="@drawable/editor_os16"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o17"
+                        android:background="@drawable/editor_os17"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o18"
+                        android:background="@drawable/editor_os18"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o19"
+                        android:background="@drawable/editor_os19"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o20"
+                        android:background="@drawable/editor_os20"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o21"
+                        android:background="@drawable/editor_os21"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o22"
+                        android:background="@drawable/editor_os22"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o23"
+                        android:background="@drawable/editor_os23"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o24"
+                        android:background="@drawable/editor_os24"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o25"
+                        android:background="@drawable/editor_os25"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o26"
+                        android:background="@drawable/editor_os26"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o27"
+                        android:background="@drawable/editor_os27"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o28"
+                        android:background="@drawable/editor_os28"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o29"
+                        android:background="@drawable/editor_os29"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+
+                    <Button
+                        android:id="@+id/o30"
+                        android:background="@drawable/editor_os30"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="5.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

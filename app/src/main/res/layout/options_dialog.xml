@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/footerBG"
+    android:padding="10.0dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/open"
+        android:paddingLeft="40.0dip"
+        android:paddingRight="40.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open" />
+
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="10.0dip" />
+
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/delete"
+        android:paddingLeft="40.0dip"
+        android:paddingRight="40.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/delete" />
+
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="10.0dip" />
+
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/cancel"
+        android:paddingLeft="40.0dip"
+        android:paddingRight="40.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/cancel" />
+</LinearLayout>

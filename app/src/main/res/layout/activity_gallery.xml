@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorMainBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/adContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/adView">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/footerBG"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:textSize="22.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_pics"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:background="@drawable/ic_back"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorWhite"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/header" />
+
+        <GridView
+            android:layout_gravity="center"
+            android:id="@+id/gallery_grid"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="?android:selectableItemBackground"
+            android:drawSelectorOnTop="true"
+            android:horizontalSpacing="10.0dip"
+            android:verticalSpacing="10.0dip"
+            android:numColumns="3"
+            android:layout_below="@+id/header" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/footerBG"
+            android:id="@+id/txt_nopics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_picture"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:background="@color/colorWhite"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/header" />
+    </RelativeLayout>
+</RelativeLayout>

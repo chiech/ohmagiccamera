@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorEditorBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/colorEditorHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editor_orientation"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/btn_bck"
+                android:background="@drawable/editor_back"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/done"
+                android:background="@drawable/editor_done3"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorEditorSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/header" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/header">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorEditorSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_above="@+id/footer" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/footer"
+            android:background="@color/colorEditorFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <Button
+                    android:textSize="9.0sp"
+                    android:textColor="@color/colorEditorWhite"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/leftrotate"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="2.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/editor_rightrotate"
+                    android:drawableTop="@drawable/editor_rightrotate"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorEditorSelected"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <Button
+                    android:textSize="9.0sp"
+                    android:textColor="@color/colorEditorWhite"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/rightrotate"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="2.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/editor_leftrotate"
+                    android:drawableTop="@drawable/editor_leftrotate"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorEditorSelected"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <Button
+                    android:textSize="9.0sp"
+                    android:textColor="@color/colorEditorWhite"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/verticalflip"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="2.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/editor_verticalflip"
+                    android:drawableTop="@drawable/editor_verticalflip"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorEditorSelected"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.95">
+
+                <Button
+                    android:textSize="9.0sp"
+                    android:textColor="@color/colorEditorWhite"
+                    android:id="@+id/horizontalflip"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="2.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:layout_width="95.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:text="@string/editor_horizontalflip"
+                    android:drawableTop="@drawable/editor_horizontalflip"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

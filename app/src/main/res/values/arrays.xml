@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fonts_array">
+        <item>font1.ttf</item>
+        <item>font2.ttf</item>
+        <item>font3.ttf</item>
+        <item>font4.ttf</item>
+        <item>font5.ttf</item>
+        <item>font6.ttf</item>
+        <item>font7.ttf</item>
+        <item>font8.ttf</item>
+        <item>font9.TTF</item>
+        <item>font10.ttf</item>
+        <item>font11.ttf</item>
+        <item>font12.ttf</item>
+        <item>font13.ttf</item>
+        <item>font14.ttf</item>
+        <item>font15.ttf</item>
+        <item>font16.ttf</item>
+        <item>font17.ttf</item>
+        <item>font18.ttf</item>
+        <item>font19.ttf</item>
+        <item>font20.TTF</item>
+        <item>font21.ttf</item>
+        <item>font22.otf</item>
+        <item>font23.TTF</item>
+        <item>font24.ttf</item>
+        <item>font25.ttf</item>
+        <item>font26.ttf</item>
+        <item>font27.ttf</item>
+        <item>font28.ttf</item>
+        <item>font29.ttf</item>
+        <item>font30.ttf</item>
+        <item>font31.ttf</item>
+        <item>font32.ttf</item>
+        <item>font33.otf</item>
+        <item>font34.TTF</item>
+        <item>font35.TTF</item>
+        <item>font36.ttf</item>
+        <item>font37.ttf</item>
+        <item>font38.TTF</item>
+        <item>font39.ttf</item>
+        <item>font40.ttf</item>
+        <item>font41.ttf</item>
+        <item>font42.ttf</item>
+        <item>font43.ttf</item>
+        <item>font44.ttf</item>
+    </string-array>
+</resources>

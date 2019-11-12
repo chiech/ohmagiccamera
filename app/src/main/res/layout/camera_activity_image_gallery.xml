@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="10.0">
+
+        <FrameLayout
+            android:id="@+id/gallery_fragment_container"
+            android:background="@color/colorBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="6.0" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/loading_lay"
+        android:background="@color/black_transparent"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

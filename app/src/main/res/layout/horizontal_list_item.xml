@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.irisstudio.demo.view.SquareFrameLayoutList android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.irisstudio.demo.view.SquareImageViewList
+        android:layout_gravity="center"
+        android:id="@id/thumbnail_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5.0dip" />
+</com.irisstudio.demo.view.SquareFrameLayoutList>

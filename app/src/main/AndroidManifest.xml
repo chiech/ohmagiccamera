@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mobo.andro.apps.ohmagiccamera">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-sdk tools:overrideLibrary="com.jsibbold.zoomage" />
+
+    <application
+        android:name="mobo.andro.apps.ohmagiccamera.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.Camera.Gallery.ImageGalleryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.ImageGalleryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.CollageEditorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.FreeCollageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.GalleryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.CollageMaker.ShareImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.irisstudio.demo.StickerGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TextLibNoActionBar" />
+
+
+
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.textmodule.TextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.PhotoEditor"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.CBSSActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.CropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.OrientationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.EffectsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.OverlaysActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.FramesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.editormodule.BorderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorAppTheme" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraDemoActivity"
+            android:label="@string/title_activity_camera_demo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraGallery.Gallery"
+            android:label="Add media"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraGallery.OpenGallery"
+            android:label="Add media"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraGallery.OpenGalleryItem" />
+        <activity
+            android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraGallery.PlayVideo"
+            android:screenOrientation="portrait" />
+        <activity android:name="mobo.andro.apps.ohmagiccamera.Camera.CameraGallery.ShowImage"></activity>
+
+        <service android:name="mobo.andro.apps.ohmagiccamera.Broadcasting.NotifyService" />
+        <receiver android:name="mobo.andro.apps.ohmagiccamera.Broadcasting.NetworkChangeReceiver">
+
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+
+        </receiver>
+
+    </application>
+
+</manifest>

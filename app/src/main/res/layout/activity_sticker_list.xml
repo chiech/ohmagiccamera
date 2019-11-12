@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/color_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <TextView
+            android:textSize="25.0sp"
+            android:typeface="sans"
+            android:textColor="#ffffffff"
+            android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stickers"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:background="@drawable/sticker_back"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/color_selected"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/header" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tabHost"
+        android:layout_below="@+id/header" />
+
+    <View
+        android:background="@color/color_selected"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@+id/tabHost" />
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabHost"
+        android:background="@color/color_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

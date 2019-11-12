@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorPrimary1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:background="@color/colorPrimaryDark1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:background="@drawable/textlib_back"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="23.0sp"
+            android:textColor="@color/colorTextLibWhite"
+            android:id="@+id/headertext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textlib_header_text"
+            android:layout_toLeftOf="@+id/btn_ok"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:background="@drawable/textlib_done"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorTextLibSelected"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/relativeLayout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1.0"
+        android:layout_below="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginBottom="15.0dip"
+                android:layout_above="@+id/lay_buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/lay_back_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <mobo.andro.apps.ohmagiccamera.textmodule.AutoFitEditText
+                    android:textSize="100.0sp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:gravity="center"
+                    android:id="@+id/auto_fit_edit_text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:maxLength="240"
+                    android:layout_centerInParent="true"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="false"
+                    android:imeOptions="actionDone"
+                    android:imeActionLabel="Done" />
+
+                <TextView
+                    android:textSize="20.0sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorTextLibWhite"
+                    android:textColorHint="@android:color/black"
+                    android:id="@+id/hint_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textlib_your_text"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorTextLibSelected"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_above="@+id/lay_buttons" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/lay_buttons"
+                android:background="@color/colorPrimaryDark2"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:weightSum="5.0"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:id="@+id/laykeyboard"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/ic_kb"
+                        android:background="@drawable/textlib_kb"
+                        android:padding="1.0dip"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorTextLibSelected"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true" />
+
+                <RelativeLayout
+                    android:id="@+id/lay_txtfont"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:background="@drawable/textlib_text"
+                        android:padding="1.0dip"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorTextLibSelected"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true" />
+
+                <RelativeLayout
+                    android:id="@+id/lay_txtcolor"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:background="@drawable/textlib_tcolor"
+                        android:padding="1.0dip"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorTextLibSelected"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true" />
+
+                <RelativeLayout
+                    android:id="@+id/lay_txtshadow"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:background="@drawable/textlib_tshadow"
+                        android:padding="1.0dip"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorTextLibSelected"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true" />
+
+                <RelativeLayout
+                    android:id="@+id/lay_txtbg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:background="@drawable/textlib_tbg"
+                        android:padding="1.0dip"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorTextLibSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+
+        <RelativeLayout
+            android:id="@+id/lay_below"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/font_grid_rel"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <GridView
+                    android:id="@+id/font_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:horizontalSpacing="3.0dip"
+                    android:verticalSpacing="3.0dip"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/color_rel"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2.0">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageButton
+                            android:id="@+id/color_picker1"
+                            android:background="@drawable/textlib_tcolorplate"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/color_recylr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@+id/color_picker1"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <RelativeLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="20.0dip"
+                            android:layout_marginRight="10.0dip">
+
+                            <ImageView
+                                android:background="@drawable/textlib_opct"
+                                android:layout_width="40.0dip"
+                                android:layout_height="40.0dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+
+                            <SeekBar
+                                android:theme="@style/SeekbarTheme"
+                                android:id="@+id/seekBar1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:max="100"
+                                android:progressDrawable="@drawable/red_scrubber_progress"
+                                android:thumb="@drawable/red_scrubber_control"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/shadow_rel"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2.0">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageButton
+                            android:id="@+id/color_picker2"
+                            android:background="@drawable/textlib_tcolorplate"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/shadow_recylr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@+id/color_picker2"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <RelativeLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip">
+
+                            <ImageView
+                                android:background="@drawable/textlib_dec"
+                                android:layout_width="30.0dip"
+                                android:layout_height="30.0dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+
+                            <SeekBar
+                                android:theme="@style/SeekbarTheme"
+                                android:id="@+id/seekBar2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40.0dip"
+                                android:layout_marginRight="40.0dip"
+                                android:max="20"
+                                android:progressDrawable="@drawable/red_scrubber_progress"
+                                android:thumb="@drawable/red_scrubber_control"
+                                android:layout_centerVertical="true" />
+
+                            <ImageView
+                                android:background="@drawable/textlib_inc"
+                                android:layout_width="30.0dip"
+                                android:layout_height="30.0dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bg_rel"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="3.0">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageButton
+                            android:id="@+id/txt_bg_none"
+                            android:background="@drawable/textlib_clear1"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/backgdImage_recylr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@+id/txt_bg_none"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageButton
+                            android:id="@+id/color_picker3"
+                            android:background="@drawable/textlib_tcolorplate"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/backgdColor_recylr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@+id/color_picker3"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <RelativeLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip">
+
+                            <ImageView
+                                android:background="@drawable/textlib_opct"
+                                android:layout_width="40.0dip"
+                                android:layout_height="40.0dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+
+                            <SeekBar
+                                android:theme="@style/SeekbarTheme"
+                                android:id="@+id/seekBar3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:max="255"
+                                android:progress="255"
+                                android:progressDrawable="@drawable/red_scrubber_progress"
+                                android:thumb="@drawable/red_scrubber_control"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

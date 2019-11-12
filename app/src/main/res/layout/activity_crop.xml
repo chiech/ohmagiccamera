@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorEditorBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/colorEditorHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editor_crop"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/btn_bck"
+                android:background="@drawable/editor_back"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/done"
+                android:background="@drawable/editor_done3"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorEditorSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/header" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/header">
+
+            <mobo.andro.apps.ohmagiccamera.crop.CropImageView
+                android:id="@+id/cropimage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:background="@color/colorEditorFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_alignParentBottom="true">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/cutom"
+                        android:background="@drawable/editor_compare_button"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="@string/editor_custom"
+                        android:textAllCaps="true" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/square"
+                        android:background="@drawable/editor_compare_button"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="@string/editor_square"
+                        android:textAllCaps="true" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio1"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="1:2" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio2"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="2:1" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio3"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="2:3" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio4"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="3:2" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio5"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="3:4" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio6"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="3:5" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio7"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="4:3" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio8"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="4:5" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio9"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="4:7" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio10"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="5:3" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio11"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="5:4" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio12"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="5:6" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio13"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="5:7" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio14"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="9:16" />
+
+                    <Button
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorEditorWhite"
+                        android:id="@+id/ratio15"
+                        android:background="@drawable/editor_compare_button"
+                        android:layout_width="50.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_margin="5.0dip"
+                        android:text="16:9" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:background="@color/colorEditorSelected"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

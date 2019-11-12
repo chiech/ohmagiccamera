@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/logo_ll"
+                android:padding="5.0dip"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/playstore"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_marginRight="2.0dip" />
+
+                <TextView
+                    android:textSize="16.0sp"
+                    android:typeface="sans"
+                    android:textStyle="italic"
+                    android:textColor="#99ffffff"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/main_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/res_container">
+
+                <RelativeLayout
+                    android:id="@+id/center_rel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/bg_image"
+                        android:visibility="visible"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <FrameLayout
+                        android:id="@+id/fragment_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/txt_sticker_rel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/res_container"
+                android:background="@color/footerBG"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_above="@+id/footer">
+
+                <RelativeLayout
+                    android:id="@+id/collage_res_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip">
+
+                        <SeekBar
+                            android:theme="@style/SeekbarTheme"
+                            android:id="@+id/seekbar_padding"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:max="40"
+                            android:layout_weight="1.0" />
+
+                        <View
+                            android:background="@color/colorWhite"
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent" />
+
+                        <SeekBar
+                            android:theme="@style/SeekbarTheme"
+                            android:id="@+id/seekbar_radius"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:max="100"
+                            android:layout_weight="1.0" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/collage_recycler"
+                        android:background="@color/subFooterBG"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="69.0dip"
+                        android:layout_alignParentBottom="true" />
+
+                    <View
+                        android:background="@color/colorWhite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="69.0dip"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/effect_res_lay"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <SeekBar
+                        android:theme="@style/SeekbarTheme"
+                        android:layout_gravity="center|top"
+                        android:id="@+id/effect_seekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:max="100"
+                        android:layout_alignParentTop="true" />
+
+                    <View
+                        android:background="@color/colorWhite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="69.0dip"
+                        android:layout_alignParentBottom="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/effects_recycler"
+                        android:background="@color/subFooterBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="69.0dip"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/font_recycler"
+                    android:background="@color/subFooterBG"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:id="@+id/bg_res_lay"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <SeekBar
+                        android:theme="@style/SeekbarTheme"
+                        android:layout_gravity="center|top"
+                        android:id="@+id/bg_seekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:max="290"
+                        android:progress="145"
+                        android:layout_alignParentTop="true" />
+
+                    <View
+                        android:background="@color/colorWhite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="69.0dip"
+                        android:layout_alignParentBottom="true" />
+
+                    <RelativeLayout
+                        android:background="@color/subFooterBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="69.0dip"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/rel_cp"
+                            android:clickable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_centerVertical="true"
+                            android:onClick="onClick">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_item"
+                                android:padding="1.0dip"
+                                android:layout_width="45.0dip"
+                                android:layout_height="45.0dip">
+
+                                <ImageView
+                                    android:id="@+id/item_image"
+                                    android:background="@drawable/ic_cp"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:textSize="10.0sp"
+                                android:textColor="@color/colorWhite"
+                                android:gravity="center"
+                                android:id="@+id/bg_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bg0"
+                                android:lines="1"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/bg_recycler"
+                            android:background="@color/subFooterBG"
+                            android:visibility="visible"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rel_cp"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sticker_container"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip">
+
+                    <RelativeLayout
+                        android:id="@+id/tab_layout_sticker"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip">
+
+                        <com.irisstudio.demo.view.TabHost
+                            android:id="@+id/tabhost"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@color/scroll_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip"
+                        android:layout_below="@+id/tab_layout_sticker">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/sticker_recyclerview"
+                            android:background="@color/subFooterBG"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_above="@+id/footer" />
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/footer"
+                android:background="@color/footerBG"
+                android:layout_width="fill_parent"
+                android:layout_height="75.0dip"
+                android:layout_alignParentBottom="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/footer_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/color_container"
+                android:background="@color/footerBG"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="175.0dip"
+                android:layout_alignParentBottom="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/color_recylr"
+                    android:background="@color/subFooterBG"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135.0dip"
+                    android:layout_marginBottom="1.0dip"
+                    android:layout_above="@+id/btn_cancel_color"
+                    android:layout_alignParentTop="true" />
+
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_above="@+id/btn_cancel_color" />
+
+                <ImageView
+                    android:id="@+id/btn_cancel_color"
+                    android:background="@drawable/ic_canceled"
+                    android:clickable="true"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:layout_margin="15.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="onClick" />
+
+                <ImageView
+                    android:id="@+id/btn_done_color"
+                    android:background="@drawable/ic_done"
+                    android:clickable="true"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:layout_margin="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="onClick" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/btn_save"
+                android:background="@drawable/btn_save"
+                android:clickable="true"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="15.0dip"
+                android:layout_above="@+id/res_container"
+                android:layout_alignParentRight="true"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/adContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>

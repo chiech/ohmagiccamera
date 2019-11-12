@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "132719664403",
+    "firebase_url": "https://ohmagiccamera.firebaseio.com",
+    "project_id": "ohmagiccamera",
+    "storage_bucket": "ohmagiccamera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132719664403:android:ab81664dc835f00dcf8ee6",
+        "android_client_info": {
+          "package_name": "mobo.andro.apps.ohmagiccamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132719664403-jcp782e5fdc7grk352jb1ajdikscee9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYBfNy0nGNhxruDLy1Ti4qBCcwxounwdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132719664403-jcp782e5fdc7grk352jb1ajdikscee9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

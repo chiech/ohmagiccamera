@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/filter_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/filter_thumb_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="#FFFFFF"/>
+                    <FrameLayout
+                        android:id="@+id/filter_thumb_selected"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <View
+                            android:background="@drawable/circle_shape"
+                            android:id="@+id/filter_thumb_selected_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/filter_thumb_selected_icon"
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:src="@drawable/selector_filter_selected" />
+                    </FrameLayout>
+
+                </FrameLayout>
+                <TextView
+                    android:textSize="8.0sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|top"
+                    android:layout_gravity="center|top"
+                    android:id="@+id/filter_thumb_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_none" />
+
+            </LinearLayout>
+
+</FrameLayout>
+
+

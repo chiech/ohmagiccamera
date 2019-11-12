@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/album_btn_cancel"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.14"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/headertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:maxLength="15"
+                    android:text="All Photos"
+                    android:textColor="#454545"
+                    android:textSize="16.0sp" />
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="8dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/headertext"
+                    android:background="@drawable/album_ic_folder_arrow" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:background="@drawable/album_btn_cancel"
+                    android:id="@+id/btn_ok"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <GridView
+        android:background="@color/color_white"
+        android:layout_gravity="center"
+        android:id="@+id/images_gridview"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:listSelector="?android:selectableItemBackground"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="1.0dip"
+        android:verticalSpacing="1.0dip"
+        android:numColumns="3"
+        android:layout_below="@+id/footer" />
+    <VideoView
+        android:background="@color/colorWhite"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@+id/footer" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/folder_recyclerview"
+        android:background="@color/color_white"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/footer" />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
